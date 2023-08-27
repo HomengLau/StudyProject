@@ -1,0 +1,49 @@
+BubbleSort——冒泡排序
+冒泡排序：一种简单的排序算法，通过重复地遍历列表，比较相邻的元素并交换它们的顺序，直到列表完全有序。
+BucketSort
+桶排序：
+    一种计算机算法,将数据分成多个桶，然后对每个桶进行排序，最后将各个桶的数据合并得到最终的排序结果。
+    · Bucket sort is an efficient sorting algorithm that works by distributing the elements of an array into a number of buckets.
+    桶排序是一种高效的排序算法，它通过将数组的元素分配到多个桶中来实现排序。
+ChoiceSort
+选择排序（Selection sort）是一种简单直观的排序算法。它的工作原理是：
+    第一次从待排序的数据元素中选出最小（或最大）的一个元素，存放在序列的起始位置，
+    然后再从剩余的未排序元素中寻找到最小（大）元素，然后放到已排序的序列的末尾。
+    以此类推，直到全部待排序的数据元素的个数为零。选择排序是不稳定的排序方法。
+CountingSort
+HeapSort
+InsertionSort
+MergeSort
+RadixSort
+ShellSort
+
+
+稳定的排序
+    冒泡排序（bubble sort）— O(n2)
+    插入排序（insertion sort）—O(n2)
+    鸡尾酒排序（cocktail sort）—O(n2)
+    桶排序（bucket sort）—O(n)；需要O(k)额外空间
+    计数排序（counting sort）—O(n+k)；需要O(n+k)额外空间
+    归并排序（merge sort）—O(n log n)；需要O(n)额外空间
+    原地归并排序— O(n log2 n)如果使用最佳的现在版本
+    二叉排序树排序（binary tree sort）— O(n log n)期望时间；O(n2)最坏时间；需要O(n)额外空间
+    鸽巢排序（pigeonhole sort）—O(n+k)；需要O(k)额外空间
+    基数排序（radix sort）—O(n·k)；需要O(n)额外空间
+    侏儒排序（gnome sort）— O(n2)
+    图书馆排序（library sort）— O(n log n)期望时间；O(n2)最坏时间；需要(1+ε)n额外空间
+    块排序（block sort）— O(n log n)
+不稳定的排序
+    选择排序（selection sort）—O(n2)
+    希尔排序（shell sort）—O(n log2 n)如果使用最佳的现在版本
+    Clover排序算法（Clover sort）—O(n)期望时间，O(n2)最坏情况
+    梳排序— O(n log n)
+    堆排序（heap sort）—O(n log n)
+    平滑排序（smooth sort）— O(n log n)
+    快速排序（quick sort）—O(n log n)期望时间，O(n2)最坏情况；对于大的、随机数列表一般相信是最快的已知排序
+    内省排序（introsort）—O(n log n)
+    耐心排序（patience sort）—O(n log n + k)最坏情况时间，需要额外的O(n + k)空间，也需要找到最长的递增子序列（longest increasing subsequence）
+不实用的排序
+    Bogo排序— O(n × n!)，最坏的情况下期望时间为无穷。
+    Stupid排序—O(n3);递归版本需要O(n2)额外内存
+    珠排序（bead sort）— O(n) or O(√n),但需要特别的硬件
+    煎饼排序—O(n),但需要特别的硬件
