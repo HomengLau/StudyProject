@@ -9,11 +9,13 @@ android {
 
     defaultConfig {
         applicationId "com.homeng.study"
+        minSdk 26
+        targetSdk 33
 
         versionCode 1
         versionName "1.0"
 
-        testInstrumentationRunner rootProject.ext.testRunner
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         consumerProguardFiles "consumer-rules.pro"
         vectorDrawables {
             useSupportLibrary true
@@ -33,12 +35,12 @@ android {
     kotlinOptions {
         jvmTarget = '1.8'
     }
-    buildFeatures {
+  /*  buildFeatures {
         compose true
-    }
-    composeOptions {
+    }*/
+/*    composeOptions {
         kotlinCompilerExtensionVersion '1.4.5'
-    }
+    }*/
     packagingOptions {
         resources {
             excludes += '/META-INF/{AL2.0,LGPL2.1}'
@@ -48,5 +50,5 @@ android {
 
 dependencies {
 
-    implementation project(":account")
+    api project(":account")
 }

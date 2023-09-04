@@ -1,8 +1,7 @@
 package com.homeng.network
 
 import okhttp3.ResponseBody
-
-sealed class BaseResult<T> constructor() : ResponseBody() {
+ open class BaseResult<T> constructor(){
     var code = -1
     var msg = ""
     var data: T? = null

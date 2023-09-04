@@ -1,8 +1,7 @@
 package com.homeng.network
 
-import androidx.test.internal.util.LogUtil
-import com.homeng.logger.LogUtils
 import com.homeng.network.NetworkConstants.Companion.APP_DEFAULT_DOMAIN
+import com.tencent.mars.xlog.Log
 import okhttp3.OkHttpClient
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
@@ -19,7 +18,7 @@ class RetrofitClient private constructor() {
          */
         fun getRetrofitClient(): Retrofit {
             if (NetworkConstants.isDebug) {
-                LogUtils.d(TAG, "getClient() ==>")
+                Log.d(TAG, "getClient() ==>")
             }
             return instance.retrofitMap[APP_DEFAULT_DOMAIN] ?: instance.createRetrofit(
                 APP_DEFAULT_DOMAIN
@@ -33,7 +32,7 @@ class RetrofitClient private constructor() {
          */
         fun getRetrofitClient(baseUrl: String): Retrofit {
             if (NetworkConstants.isDebug) {
-                LogUtil.logDebug(TAG, "getClient() ==> baseUrl : $baseUrl")
+                Log.d(TAG, "getClient() ==> baseUrl : $baseUrl")
             }
             return instance.retrofitMap[baseUrl] ?: instance.createRetrofit(baseUrl).also {
                 instance.retrofitMap[baseUrl] = it
