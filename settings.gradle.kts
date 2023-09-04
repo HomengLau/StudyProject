@@ -45,7 +45,7 @@ dependencyResolutionManagement {
 }
 rootProject.name = "StudyProject"
 include(":app")
-include(":app:sort_algorithms")
+//include(":app:sort_algorithms")
 include(":account")
 include(":network")
 include(":logger")
